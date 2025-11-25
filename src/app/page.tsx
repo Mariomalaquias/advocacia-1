@@ -368,7 +368,7 @@ export default function LawFirmWebsite() {
             </div>
           </div>
           <div className="pt-8 border-t border-slate-900 text-center text-sm">
-            © 2024 Magalhães & Associados. Todos os direitos reservados.
+            © 2025 Magalhães & Associados. Todos os direitos reservados.
           </div>
         </div>
       </footer>
