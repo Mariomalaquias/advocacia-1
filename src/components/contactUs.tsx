@@ -15,12 +15,13 @@ import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 
 const ContactUs = () => {
   return (
-    <div className="bg-gray-700">
+    <div id="contato" className="bg-gray-700">
+      <h2 className="text-white font-bold text-3xl text-center p-3">
+        Entre em contato
+      </h2>
       <div className="flex flex-col md:flex-row items-center justify-around">
         <div className="flex flex-col items-center">
-          {/* Entre em contato */}
-
-          <div className="flex flex-col gap-4 mx-10 mt-6 lg:mx-28">
+          <div className="flex flex-col gap-4  mt-6 lg:mx-3">
             <div className="flex items-start gap-4">
               <div className="p-3 bg-slate-100 rounded-full">
                 <Phone className="h-6 w-6 text-slate-900" />
@@ -119,55 +120,58 @@ const ContactUs = () => {
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
-      </div>
-      <div className="mx-3 md:mx-48 p-6">
-        <Card className="border-slate-200 shadow-lg">
-          <CardHeader>
-            <CardTitle>Envie sua mensagem</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <form className="space-y-4">
-              <div className="grid md:grid-cols-2 gap-4">
-                <div className="space-y-2">
-                  <label className="text-sm font-medium">Nome</label>
-                  <Input placeholder="Seu nome" />
+        <div className="p-6 w-full">
+          <Card className="border-slate-200 shadow-lg">
+            <CardHeader>
+              <CardTitle>Envie sua mensagem</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <form className="space-y-4">
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div className="space-y-2">
+                    <label className="text-sm font-medium">Nome</label>
+                    <Input placeholder="Seu nome" />
+                  </div>
+                  <div className="space-y-2">
+                    <label className="text-sm font-medium">Telefone</label>
+                    <Input placeholder="(00) 00000-0000" />
+                  </div>
                 </div>
                 <div className="space-y-2">
-                  <label className="text-sm font-medium">Telefone</label>
-                  <Input placeholder="(00) 00000-0000" />
+                  <label className="text-sm font-medium">Email</label>
+                  <Input type="email" placeholder="seu@email.com" />
                 </div>
-              </div>
-              <div className="space-y-2">
-                <label className="text-sm font-medium">Email</label>
-                <Input type="email" placeholder="seu@email.com" />
-              </div>
-              <div className="space-y-2">
-                <label htmlFor="area-interesse" className="text-sm font-medium">
-                  Área de Interesse
-                </label>
-                <select
-                  id="area-interesse"
-                  className="flex h-10 w-full items-center justify-between rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                >
-                  <option>Selecione uma área</option>
-                  <option>Direito Civil</option>
-                  <option>Empresarial</option>
-                  <option>Trabalhista</option>
-                </select>
-              </div>
-              <div className="space-y-2">
-                <label className="text-sm font-medium">Mensagem</label>
-                <Textarea
-                  placeholder="Descreva brevemente seu caso..."
-                  className="min-h-[120px]"
-                />
-              </div>
-              <Button className="w-full bg-slate-900 hover:bg-slate-800 text-white h-12 text-lg">
-                Enviar Mensagem
-              </Button>
-            </form>
-          </CardContent>
-        </Card>
+                <div className="space-y-2">
+                  <label
+                    htmlFor="area-interesse"
+                    className="text-sm font-medium"
+                  >
+                    Área de Interesse
+                  </label>
+                  <select
+                    id="area-interesse"
+                    className="flex h-10 w-full items-center justify-between rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                  >
+                    <option>Selecione uma área</option>
+                    <option>Direito Civil</option>
+                    <option>Empresarial</option>
+                    <option>Trabalhista</option>
+                  </select>
+                </div>
+                <div className="space-y-2">
+                  <label className="text-sm font-medium">Mensagem</label>
+                  <Textarea
+                    placeholder="Descreva brevemente seu caso..."
+                    className="min-h-[120px]"
+                  />
+                </div>
+                <Button className="w-full bg-slate-900 hover:bg-slate-800 text-white h-12 text-lg">
+                  Enviar Mensagem
+                </Button>
+              </form>
+            </CardContent>
+          </Card>
+        </div>
       </div>
     </div>
   );

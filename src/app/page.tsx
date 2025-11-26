@@ -99,15 +99,17 @@ export default function LawFirmWebsite() {
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex gap-8 font-medium text-sm text-slate-300">
-            {["Início", "Áreas de Atuação", "Sobre Nós", "Blog"].map((item) => (
-              <a
-                key={item}
-                href={`#${item.toLowerCase().replace(/ /g, "-")}`}
-                className="hover:text-slate-900 transition-colors"
-              >
-                {item}
-              </a>
-            ))}
+            {["Início", "Áreas de Atuação", "Sobre Nós", "Contato"].map(
+              (item) => (
+                <a
+                  key={item}
+                  href={`#${item.toLowerCase().replace(/ /g, "-")}`}
+                  className="hover:text-slate-900 transition-colors"
+                >
+                  {item}
+                </a>
+              )
+            )}
           </nav>
 
           <div className="hidden md:flex">
@@ -229,7 +231,10 @@ export default function LawFirmWebsite() {
       </section>
 
       {/* --- STATS & AUTHORITY --- */}
-      <section className="py-12 bg-slate-500  border-b border-slate-900">
+      <section
+        id="sobre-nós"
+        className="py-12 bg-slate-500  border-b border-slate-900"
+      >
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 divide-y md:divide-y-0 md:divide-x divide-slate-100">
             {SITE_DATA.stats.map((stat, index) => (
