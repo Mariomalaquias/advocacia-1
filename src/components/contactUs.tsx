@@ -27,8 +27,8 @@ const ContactUs = () => {
                 <Phone className="h-6 w-6 text-slate-900" />
               </div>
               <div>
-                <p className="font-bold text-slate-900">Telefone</p>
-                <p className="text-slate-600">+55 (11) 99999-9999</p>
+                <p className="font-bold text-slate-100">Telefone</p>
+                <p className="text-slate-200">+55 (11) 99999-9999</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
@@ -36,8 +36,8 @@ const ContactUs = () => {
                 <Mail className="h-6 w-6 text-slate-900" />
               </div>
               <div>
-                <p className="font-bold text-slate-900">Email</p>
-                <p className="text-slate-600">contato@magalhaes.law</p>
+                <p className="font-bold text-slate-100">Email</p>
+                <p className="text-slate-200">contato@magalhaes.law</p>
               </div>
             </div>
             <div className="flex items-start gap-4">
@@ -45,8 +45,8 @@ const ContactUs = () => {
                 <MapPin className="h-6 w-6 text-slate-900" />
               </div>
               <div>
-                <p className="font-bold text-slate-900">Escritório</p>
-                <p className="text-slate-600">
+                <p className="font-bold text-slate-100">Escritório</p>
+                <p className="text-slate-200">
                   Av. Paulista, 1000 - 15º Andar
                   <br />
                   São Paulo - SP

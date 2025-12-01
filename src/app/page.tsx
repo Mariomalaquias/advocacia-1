@@ -231,7 +231,7 @@ export default function LawFirmWebsite() {
       </section>
 
       {/* --- STATS & AUTHORITY --- */}
-      <section
+      {/* <section
         id="sobre-nós"
         className="py-12 bg-slate-500  border-b border-slate-900"
       >
@@ -256,10 +256,10 @@ export default function LawFirmWebsite() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* --- WHY US (Modern Grid) --- */}
-      <section className="py-24 bg-slate-900 text-white">
+      <section id="sobre-nós" className="py-24 bg-slate-900 text-white">
         <div className="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6 font-serif">
